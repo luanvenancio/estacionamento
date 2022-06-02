@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Estacionamento</h2>
+
+        <button class="adicionaVeiculo">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <g fill="none" stroke="#5F758E" stroke-width="2">
+                    <path stroke-linecap="round" d="M12 8v4m0 0v4m0-4h4m-4 0H8" />
+                    <circle cx="12" cy="12" r="10" />
+                </g>
+            </svg>
+            <p>Adicionar novo veículo</p>
+        </button>
+    </div>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>MODELO</th>
+                <th>PLACA</th>
+                <th>DATA DE ENTRADA</th>
+                <th>AÇÕES</th>
+            </tr>
+        </thead>
+        <tbody id="patio"></tbody>
+    </table>
+
+    <div id="modal-veiculo" class="modal-container">
+        <div class="modal">
+            <form>
+                <h3>Adicionar Veículo</h3>
+                <p>Cadastre um novo veículo ao estacionamento</p>
+                <div class="form-control">
+                    <label for="nome">Modelo</label>
+                    <input type="text" id="modelo" placeholder="Ford KA" autocomplete="off" />
+                </div>
+                <div class="form-control">
+                    <label for="placa">Placa</label>
+                    <input type="text" id="placa" placeholder="AEN8E98" autocomplete="off" />
+                </div>
+            </form>
+
+            <button class="fechar">Fechar</button>
+            <button class="btn" id="cadastrar">Cadastrar</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
