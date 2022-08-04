@@ -101,11 +101,14 @@ interface Veiculo {
             true
         );
 
+        $("#modelo").value = "";
+        $("#placa").value = "";
+
         fechaModal("modal-veiculo");
     });
 })();
 
-function iniciaModal(modalID) {
+function iniciaModal(modalID: string) {
     const modal = document.getElementById(modalID);
     if (modal) {
         modal.classList.add("mostrar");
@@ -120,7 +123,7 @@ function iniciaModal(modalID) {
     }
 }
 
-function fechaModal(modalID) {
+function fechaModal(modalID: string) {
     const modal = document.getElementById(modalID);
     if (modal) {
         modal.classList.remove("mostrar");

@@ -64,6 +64,8 @@
             return;
         }
         patio().adicionar({ modelo, placa, entrada: new Date().toUTCString() }, true);
+        $("#modelo").value = "";
+        $("#placa").value = "";
         fechaModal("modal-veiculo");
     });
 })();
